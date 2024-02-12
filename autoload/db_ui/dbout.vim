@@ -322,12 +322,12 @@ function! s:progress_show_vim(path)
 endfunction
 
 function! s:progress_show(...)
-  if has('nvim')
-    call s:progress_show_neovim(get(a:, 1, ''))
-  else
-    call s:progress_show_vim(get(a:, 1, ''))
-  endif
-  call s:progress_reset_positions()
+  "if has('nvim')
+  "  call s:progress_show_neovim(get(a:, 1, ''))
+  "else
+  "  call s:progress_show_vim(get(a:, 1, ''))
+  "endif
+  "call s:progress_reset_positions()
 endfunction
 
 
